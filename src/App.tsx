@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, CssBaseline, ThemeProvider, createTheme, Snackbar, Tabs, Tab, Box, Button } from '@mui/material';
+import { Container, CssBaseline, ThemeProvider, createTheme, Snackbar, Tabs, Tab, Box, Typography } from '@mui/material';
 import CocktailForm from './components/CocktailForm';
 import CocktailList from './components/CocktailList';
 import { auth, db } from './firebase/config';
@@ -73,7 +73,7 @@ const App: React.FC<AppProps> = () => {
     }
   };
 
-  const handleChangeTab = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChangeTab = (_: React.SyntheticEvent, newValue: number) => {
     setCurrentTab(newValue);
   };
 

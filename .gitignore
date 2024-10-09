@@ -28,6 +28,3 @@ dist-ssr
 
 # Do not ignore .gitconfig
 !.gitconfig
-
-# Игнорировать файл конфигурации Firebase
-src/firebase/config.ts
